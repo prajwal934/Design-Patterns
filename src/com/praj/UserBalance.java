@@ -11,8 +11,11 @@ public class UserBalance {
     public static UserBalance getAmount() {
 //        Object of this class
         if(amount == null) {
-//            Object created with the help of method
-            amount = new UserBalance();
+            synchronized (UserBalance.class) {
+                if(amount == null) {
+                    amount = new UserBalance();
+                }
+            }
         }
         return amount;
     }
