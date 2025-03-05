@@ -8,8 +8,9 @@ public class UserBalance {
         System.out.println("user amount created successfully!");
     }
 // lazy way of creating singleton
-    public static UserBalance getAmount() {
-//        Object of this class
+    public  static UserBalance getAmount() {
+//        Object of this
+//        Using synchronized  // after thread1 complete then thread2 work
         if(amount == null) {
             synchronized (UserBalance.class) {
                 if(amount == null) {
