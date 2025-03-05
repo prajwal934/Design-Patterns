@@ -5,8 +5,12 @@ public class UserBalance {
     private static UserBalance amount;
 //    create constructor
     private UserBalance() {
-        System.out.println("user amount created successfully!");
+//        System.out.println("user amount created successfully!");
+        if(amount != null) {
+            throw new RuntimeException("You're trying to break singleton pattern!");
+        }
     }
+
 // lazy way of creating singleton
     public  static UserBalance getAmount() {
 //        Object of this
