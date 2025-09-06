@@ -1,4 +1,4 @@
-package openclosed;
+package com.praj.solidp.openclosed;
 
 // No modification in our calculator functionality
 // We can keep adding extension by create new operations

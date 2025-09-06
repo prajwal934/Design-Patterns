@@ -1,4 +1,4 @@
-package liskov.bad;
+package com.praj.solidp.liskov.bad;
 
 
  /*This is loan interface responsible for payment related on a loan account

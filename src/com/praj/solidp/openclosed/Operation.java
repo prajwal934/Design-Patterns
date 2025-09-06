@@ -1,4 +1,4 @@
-package openclosed;
+package com.praj.solidp.openclosed;
 
 public interface Operation {
 //     This is good we keep adding new operation implementation

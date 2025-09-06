@@ -1,4 +1,4 @@
-package openclosed;
+package com.praj.solidp.openclosed;
 
 public class BadCalculator {
 //     This is bad design where we are taking type and for each type we are having cases

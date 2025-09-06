@@ -1,4 +1,4 @@
-package com.praj;
+package com.praj.solidp;
 
 import java.lang.reflect.Constructor;
 
@@ -21,6 +21,7 @@ public class UserMain {
         * 1. Reflection API to break Singleton pattern
         *       solution: if object is there, then throw Exception from inside constructor
         * 2. Use Enum
+        * 3. Deserialization
         *
         *
         *

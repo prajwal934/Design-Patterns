@@ -1,4 +1,4 @@
-package liskov.bad;
+package com.praj.solidp.liskov.bad;
 
 public class LoanClosureService {
     private LoanPayment loanPayment;

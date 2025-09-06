@@ -1,4 +1,4 @@
-package com.praj;
+package com.praj.solidp;
 
 public class CreditBalance {
 

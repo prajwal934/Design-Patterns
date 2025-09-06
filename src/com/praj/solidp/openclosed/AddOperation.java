@@ -1,4 +1,4 @@
-package openclosed;
+package com.praj.solidp.openclosed;
 
 public class AddOperation implements  Operation{
     @Override
