@@ -83,3 +83,57 @@ should behave consistently!.
             // send sms!
         }
     }
+
+------------------
+## 4. Interface Segregation Principle
+Many client interface are better than one general purpose interface.
+client should not be forced to implement methods they don't need.
+
+Example:
+Spilt large interface into smaller ones so classes only implement what they need.
+
+public abstract class NotificationService {
+public abstract void send(String message);
+}
+
+    public interface Printable {
+        public void print();
+    }
+
+    public interface Scannable {
+        public void scan();
+    }
+
+    public class Printer implements Printable {
+        public void print() {
+            // print logic!
+        }
+    }
+
+-----------------
+## 5. Dependency Inversion Principle:
+
+High level module shouldn't depend on low level module but rather both 
+should depend on abstraction.
+
+Depend on abstraction, not concrete classes.
+
+        public interface MessageService {
+            public void send(String message);
+        }
+        public EmailService implements MessageService {
+            public void send(String message) {
+                    System.out.println("Sending Email: " + message);
+            }
+        }
+        public class Notification {
+            private MessageService service;
+            
+            public Notification(MessageService service) {
+                this.service = service;
+            }
+
+            public void alert(String message) {
+                service.send(message);
+            }
+        }
