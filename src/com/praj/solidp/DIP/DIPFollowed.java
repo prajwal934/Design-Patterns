@@ -38,6 +38,6 @@ public class DIPFollowed {
         service.storeUser("Prajwal");
 
         UserServices service1 = new UserServices(mongo);
-        service.storeUser("Priya");
+        service.storeUser("Pr");
     }
 }
